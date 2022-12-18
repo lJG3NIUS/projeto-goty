@@ -2,6 +2,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'Golden';
+    src: url('../fontes/Golden Age.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'BrickShapers';
+    src:url('../fontes/BrickShapers.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Pixel';
+    src:url('../fontes/Pixellari.ttf') format('truetype');
+    font-weight: normal;
+}    
+
+:root{
+    --font-padrao:'Golden',cursive;
+    --font-h1:'BrickShapers',cursive;
+    --font-nav:'Pixel',cursive;
+    --font-google:'Saira Condensed', sem serifa;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -40,8 +65,9 @@ header div{
 header h1{
     display:inline-block ;
     transform: translateY(-25px);
-    font-size: 1.7em;
+    font-size: 2.3em;
     letter-spacing: 4px;
+   
 }
 
 header img{
@@ -54,14 +80,13 @@ header img{
 header > div > h1 > a{
     text-decoration: none;
     color: white;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: var(--font-h1);
 }
 
 header nav{
     text-align: center;
     margin-left: -180px;
     margin-top: -23px;
-    
    
 }
 
@@ -69,16 +94,17 @@ header > nav > a{
     text-decoration: none;
     padding: 10px 10px 1px 10px;
     margin:40px;
+    font-family: var(--font-nav);
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: white;
     transition-duration: .3s;
 }
 
 header > nav > a:hover{
-    background-color: #BD0205;
+    background-color: #bd0205a8;
     border-radius: 5px 5px 0px 0px;
-    color: #F88A0D;
+    color: white;
 }
 
 main{
@@ -103,12 +129,24 @@ section#fundo2{
     height: 100px;
 }
 
-div#logo  img{
+div#msg {
+    text-align: center;
+    transform: translate(-400px,140px);
+    color: white;
+    font-family:var(--font-google) ;
+}
+
+div#msg p{
+    font:italic bold 3em var(--font-padrao);
+    color: white;
+    line-height: 1em;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.493); 
+}
+
+div#logo > a > img{
     position: absolute;
-    left: -50px;
-    top: 80px;
-    width: 700px;
-    height: 200px;
-    
+    top: 330px;
+    left: 50px;
+    width: 80px;
     
 }
