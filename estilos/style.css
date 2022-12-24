@@ -54,7 +54,7 @@ header{
 
 header div{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color:#D43F10;
     width:200px;
     height: 100px;
     border-radius: 0px 15px 15px 0px;
@@ -64,8 +64,8 @@ header div{
 
 header h1{
     display:inline-block ;
-    transform: translateY(-25px);
-    font-size: 2.3em;
+    transform: translateY(-20px);
+    font-size: 2em;
     letter-spacing: 4px;
    
 }
@@ -143,10 +143,82 @@ div#msg p{
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.493); 
 }
 
+div#msg > p#lucas{
+    font-family: var(--font-google);
+    font-size: 1em;
+}
+
+div#msg > p#lucas:hover{
+    text-decoration: underline;
+    color: #D43F10;
+}
+
 div#logo > a > img{
     position: absolute;
     top: 330px;
     left: 50px;
     width: 80px;
-    
 }
+
+div#container{
+    position: absolute;
+    top: 30px;
+    left: 610px;
+    background-color: rgba(255, 255, 255, 0.158) ;
+    box-shadow: 10px 3px 7px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+div#container > p{
+    font: bolder 1.5em var(--font-google);
+    text-align: center;
+    color: white;
+    transform: translateY(30px);
+}
+
+div#container > a#youtube{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    left: 50px;
+    width: 200px;
+    padding: 20px;
+    background-color: #D43F10;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #D43F10;
+}
+
+div#container > a#youtube:hover{
+    color: #D43F10;
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+    transition:color .3s ,background-color .3s
+     ;
+}
+
+div#container > a > img{
+    display: inline;
+    position: relative;
+    top: 100px;
+    left: 23px;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    margin-right: 5px;
+    border:3px solid white;
+    border-radius: 5px;
+}
+
+div#container > a > img:hover{
+    background-color: #D43F10;
+    transition-duration: 1s;
+}
+
+
+
