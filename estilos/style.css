@@ -119,6 +119,39 @@ section#fundo{
     width: 400px;
     height: 557px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.473);
+    
+}
+
+
+section#fundo  img{
+    display: inline;
+    width: 400px;
+    height: 255px;
+    box-shadow: 5px 0px 7px black;
+}
+
+section#fundo img:hover{
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    transform: translate(-5px,-5px);
+    box-shadow: 7px 0px 15px ;
+    transition: border .3s,transform .3s;
+} 
+
+section#fundo a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #D43F10;
+    color: black;
+    padding: 8px;
+    font-weight: bolder;
+    border: 2px solid #D43F10;
+}
+
+section#fundo a:hover{
+    background-color: black;
+    color: #D43F10;
+    transition: background-color .3s,color .3s;
 }
 
 section#fundo2{
