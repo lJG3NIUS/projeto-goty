@@ -43,39 +43,247 @@
 
 
 body{
+    width: 100vw;
+    height: 100vh;
     background-color: white;
 }
 
+body{
+    background: black url(../img/tela2-jpg.webp) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
 header{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.61);
     height: 100px;
     color: white;
 }
 
-header img{
-    position: relative;
-    width: 70px;
-    left: 635px;
+header div{
+    display: inline-block;
+    background-color:#D43F10;
+    width:200px;
+    height: 100px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.301);
+
 }
 
 header h1{
-    display: block;
+    display:inline-block ;
+    transform: translate(-25px,10px);
     font-size: 2em;
     letter-spacing: 4px;
-    transform: translate(180px,-55px);
-    text-align: center;   
+   
 }
+
+header img{
+    width: 70px;
+    color: white;
+    transform: translateX(60px);
+    
+}
+
 
 header > div > h1 > a{
-    font-family: var(--font-padrao);
     text-decoration: none;
+    color: white;
+    font-family: var(--font-h1);
+}
+
+header nav{
+    text-align: center;
+    margin-left: -180px;
+    margin-top: -23px;
+   
+}
+
+header > nav > a{
+    text-decoration: none;
+    padding: 10px 10px 1px 10px;
+    margin:40px;
+    font-family: var(--font-nav);
+    font-weight: 500;
+    font-size: 1.3em;
+    color: white;
+    transition-duration: .3s;
+}
+
+header > nav > a:hover{
+    background-color: #bd0205a8;
+    border-radius: 5px 5px 0px 0px;
     color: white;
 }
 
-header span#burguer{
-    color: white;
-    transform: translate(500px,-85px);
+header span{
+    position: absolute;
+    display: block;
+    left: 1230px;
+    top: 35px;
 }
+
+a#login{
+    display: block;
+    text-align: right;
+    transform: translate(-20px,-62px);
+    color: white;
+    text-decoration: none;
+    font: bold 1.4em var(--font-padrao);
+}
+
+main{
+    position: relative;
+    
+}
+
+section#fundo{
+    position: absolute;
+    top: 0px;
+    left: 960px;
+    background-color: rgba(255, 255, 255, 0.158);
+    width: 400px;
+    height: 557px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.473);
+    
+}
+
+
+section#fundo  img{
+    display: inline;
+    width: 400px;
+    height: 255px;
+    box-shadow: 5px 0px 7px black;
+}
+
+section#fundo img:hover{
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    transform: translate(-5px,-5px);
+    box-shadow: 7px 0px 15px ;
+    transition: border .3s,transform .3s;
+} 
+
+section#fundo a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #D43F10;
+    color: black;
+    padding: 8px;
+    font-weight: bolder;
+    border: 2px solid #D43F10;
+}
+
+section#fundo a:hover{
+    background-color: black;
+    color: #D43F10;
+    transition: background-color .3s,color .3s;
+}
+
+section#video iframe{
+    position: absolute;
+    top: 220px;
+    left: 40px;
+    height: 300px;
+}
+
+div#msg {
+    text-align: center;
+    transform: translate(-400px,75px);
+    color: white;
+    font-family:var(--font-google) ;
+}
+
+div#msg p{
+    font:italic bold 3em var(--font-padrao);
+    color: white;
+    line-height: 1em;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.493); 
+}
+
+div#msg > p#lucas{
+    font-family: var(--font-google);
+    font-size: 1em;
+}
+
+div#msg > p#lucas:hover{
+    text-decoration: underline;
+    color: #D43F10;
+}
+
+div#logo > a > img{
+    position: absolute;
+    top: 330px;
+    left: 50px;
+    width: 80px;
+}
+
+div#container{
+    position: absolute;
+    top: 60px;
+    left: 610px;
+    background-color: rgba(255, 255, 255, 0.158) ;
+    box-shadow: 10px 3px 7px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+div#container > p{
+    font: bolder 1.5em var(--font-google);
+    text-align: center;
+    color: white;
+    transform: translateY(30px);
+}
+
+div#container > a#youtube{
+    position: relative;
+    text-align: center;
+    top: 150px;
+    left: 50px;
+    width: 200px;
+    padding: 20px;
+    background-color: #D43F10;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #D43F10;
+}
+
+div#container > a#youtube:hover{
+    color: #D43F10;
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+    transition:color .3s ,background-color .3s
+     ;
+}
+
+div#container > a > img{
+    display: inline;
+    position: relative;
+    top: 100px;
+    left: 23px;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    margin-right: 5px;
+    border:3px solid white;
+    border-radius: 5px;
+}
+
+div#container > a > img:hover{
+    background-color: #D43F10;
+    transition-duration: 1s;
+}
+
+
+
+
+
+
 
 
 
