@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>OPGame</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div>
             <a href="#"><img src="img/logotipo-removebg-preview.png" alt="logotipo"></a>
             <h1><a href="#">OPGAME</a></h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
         </div>
-        <nav>
+        <nav id="itens">
             <a href="#">Jogos</a>
             <a href="#">Premiações</a>
             <a href="#">Consoles</a>
@@ -23,7 +26,7 @@
         </nav>
         <span class="material-symbols-outlined">
             person
-        </span><a id="login" href="#">ENTRAR</a>
+        </span ><a id="login" href="#">ENTRAR</a>
     </header>
     <main>
         <div id="msg">
@@ -33,22 +36,30 @@
             </p><p id="lucas"> Lucas Jefferson</p>
         </div>
         <section id="fundo">
-            <img src="" alt="">
-            <img src="" alt="">
-            <!--<a href="#">Ver mais</a>-->
+            <img src="img/reddead500.jpg" alt="">
+            <img src="img/elden-ring500.jpg" alt="">
+            <a href="#">Ver mais</a>
         </section>
         <section id="video">
-            <!--<iframe width="500" height="315" src="https://www.youtube.com/embed/r4yCbxX1Nxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/r4yCbxX1Nxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <div id="container">
-           <!-- <p>Mais maneiras de acompanhar:</p>-->
-            <a href="https://www.facebook.com/lucasalves.shaushau" target="_blank" rel="external"><img src="" alt=""></a>
-            <a href="https://www.instagram.com/qlucajef/" target="_blank" rel="external"><img  src="" alt=""></a>
-            <a href="https://twitter.com/lucajef/with_replies" target="_blank" rel="external"><img src="" alt=""></a>
-            <!--<a id="youtube" style="display: block;" href="https://www.youtube.com/channel/UChKJpeL8zNn5-O0glJZyxzQ" target="_blank" rel="external">YouTube</a>-->
+           <p>Mais maneiras de acompanhar:</p>
+            <a href="https://www.facebook.com/lucasalves.shaushau" target="_blank" rel="external"><img src="img/twitter-branco-removebg-preview.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/qlucajef/" target="_blank" rel="external"><img  src="img/instagram-removebg-preview360.png" alt="instagram"></a>
+            <a href="https://twitter.com/lucajef/with_replies" target="_blank" rel="external"><img src="img/facebook-removebg-preview.png" alt="facebook"></a>
+            <a id="youtube" style="display: block;" href="https://www.youtube.com/channel/UChKJpeL8zNn5-O0glJZyxzQ" target="_blank" rel="external">YouTube</a>
         </div>
-
     </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 992){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
     
 </body>
 </html>

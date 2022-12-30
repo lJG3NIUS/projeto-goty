@@ -58,7 +58,28 @@ header img{
     left: 635px;
 }
 
-header 
+header h1{
+    display: block;
+    font-size: 2em;
+    letter-spacing: 4px;
+    transform: translate(180px,-55px);
+    text-align: center;   
+}
+
+header > div > h1 > a{
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    color: white;
+}
+
+header span#burguer{
+    color: white;
+    transform: translate(500px,-85px);
+}
+
+
+
+
 
 
 
