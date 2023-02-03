@@ -257,8 +257,7 @@ div#container > a#youtube:hover{
     color: #D43F10;
     background-color: rgb(255, 255, 255);
     border-color: white;
-    transition:color .3s ,background-color .3s
-     ;
+    transition:color .3s ,background-color .3s;
 }
 
 div#container > a > img{
